@@ -1,0 +1,726 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0FFB9027AB9648805D9D35FD /* libPods-FixerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9024072B10DF52568CA79B7 /* libPods-FixerTests.a */; };
+		4609000C5F87E372AD5F7792 /* libPods-Fixer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D8581EA90785140408C1E1D /* libPods-Fixer.a */; };
+		4D81C54C1D9BF1C500378D75 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D81C54B1D9BF1C500378D75 /* main.m */; };
+		4D81C54F1D9BF1C500378D75 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D81C54E1D9BF1C500378D75 /* AppDelegate.m */; };
+		4D81C5521D9BF1C500378D75 /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D81C5511D9BF1C500378D75 /* MainVC.m */; };
+		4D81C5551D9BF1C500378D75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D81C5531D9BF1C500378D75 /* Main.storyboard */; };
+		4D81C5581D9BF1C500378D75 /* Fixer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4D81C5561D9BF1C500378D75 /* Fixer.xcdatamodeld */; };
+		4D81C55A1D9BF1C500378D75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D81C5591D9BF1C500378D75 /* Assets.xcassets */; };
+		4D81C55D1D9BF1C500378D75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D81C55B1D9BF1C500378D75 /* LaunchScreen.storyboard */; };
+		4D81C5681D9BF1C500378D75 /* FixerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D81C5671D9BF1C500378D75 /* FixerTests.m */; };
+		4D81C5731D9BF1C500378D75 /* FixerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D81C5721D9BF1C500378D75 /* FixerUITests.m */; };
+		4DE3FB981D9C2E4A0087C5F6 /* PickerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE3FB971D9C2E4A0087C5F6 /* PickerVC.m */; };
+		5B183040533A403F11751D77 /* libPods-FixerUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF91A9C18E246C953F359C24 /* libPods-FixerUITests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4D81C5641D9BF1C500378D75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D81C53F1D9BF1C400378D75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D81C5461D9BF1C400378D75;
+			remoteInfo = Fixer;
+		};
+		4D81C56F1D9BF1C500378D75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D81C53F1D9BF1C400378D75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D81C5461D9BF1C400378D75;
+			remoteInfo = Fixer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		15DD4ACD2CECD4E34CB2EEFB /* Pods-FixerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FixerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FixerUITests/Pods-FixerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		25025E6EE2F24754DE6770AD /* Pods-FixerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FixerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FixerTests/Pods-FixerTests.release.xcconfig"; sourceTree = "<group>"; };
+		49CADD40A21C63A92866575A /* Pods-Fixer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fixer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fixer/Pods-Fixer.release.xcconfig"; sourceTree = "<group>"; };
+		4D81C5471D9BF1C400378D75 /* Fixer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fixer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D81C54B1D9BF1C500378D75 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4D81C54D1D9BF1C500378D75 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4D81C54E1D9BF1C500378D75 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4D81C5501D9BF1C500378D75 /* MainVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainVC.h; sourceTree = "<group>"; };
+		4D81C5511D9BF1C500378D75 /* MainVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainVC.m; sourceTree = "<group>"; };
+		4D81C5541D9BF1C500378D75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4D81C5571D9BF1C500378D75 /* Fixer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Fixer.xcdatamodel; sourceTree = "<group>"; };
+		4D81C5591D9BF1C500378D75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4D81C55C1D9BF1C500378D75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4D81C55E1D9BF1C500378D75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D81C5631D9BF1C500378D75 /* FixerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FixerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D81C5671D9BF1C500378D75 /* FixerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FixerTests.m; sourceTree = "<group>"; };
+		4D81C5691D9BF1C500378D75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D81C56E1D9BF1C500378D75 /* FixerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FixerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D81C5721D9BF1C500378D75 /* FixerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FixerUITests.m; sourceTree = "<group>"; };
+		4D81C5741D9BF1C500378D75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D8581EA90785140408C1E1D /* libPods-Fixer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Fixer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DE3FB951D9BF9750087C5F6 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		4DE3FB961D9C2E4A0087C5F6 /* PickerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerVC.h; sourceTree = "<group>"; };
+		4DE3FB971D9C2E4A0087C5F6 /* PickerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerVC.m; sourceTree = "<group>"; };
+		7AE6F0235EE25E5A19FD0DF8 /* Pods-FixerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FixerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FixerTests/Pods-FixerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		81C4DD704B00E0B280A96AC4 /* Pods-FixerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FixerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FixerUITests/Pods-FixerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AB99167E8E5E46878F0DA8BE /* Pods-Fixer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fixer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fixer/Pods-Fixer.debug.xcconfig"; sourceTree = "<group>"; };
+		AF91A9C18E246C953F359C24 /* libPods-FixerUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FixerUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9024072B10DF52568CA79B7 /* libPods-FixerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FixerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D81C5441D9BF1C400378D75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4609000C5F87E372AD5F7792 /* libPods-Fixer.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D81C5601D9BF1C500378D75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FFB9027AB9648805D9D35FD /* libPods-FixerTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D81C56B1D9BF1C500378D75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B183040533A403F11751D77 /* libPods-FixerUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D81C53E1D9BF1C400378D75 = {
+			isa = PBXGroup;
+			children = (
+				4D81C5491D9BF1C500378D75 /* Fixer */,
+				4D81C5661D9BF1C500378D75 /* FixerTests */,
+				4D81C5711D9BF1C500378D75 /* FixerUITests */,
+				4D81C5481D9BF1C400378D75 /* Products */,
+				E04DF54534971A55E9826251 /* Pods */,
+				FB45BE21549BEF7C83216A9E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4D81C5481D9BF1C400378D75 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D81C5471D9BF1C400378D75 /* Fixer.app */,
+				4D81C5631D9BF1C500378D75 /* FixerTests.xctest */,
+				4D81C56E1D9BF1C500378D75 /* FixerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4D81C5491D9BF1C500378D75 /* Fixer */ = {
+			isa = PBXGroup;
+			children = (
+				4D81C54D1D9BF1C500378D75 /* AppDelegate.h */,
+				4D81C54E1D9BF1C500378D75 /* AppDelegate.m */,
+				4DE3FB951D9BF9750087C5F6 /* Constants.h */,
+				4D81C5501D9BF1C500378D75 /* MainVC.h */,
+				4D81C5511D9BF1C500378D75 /* MainVC.m */,
+				4D81C5531D9BF1C500378D75 /* Main.storyboard */,
+				4D81C5591D9BF1C500378D75 /* Assets.xcassets */,
+				4D81C55B1D9BF1C500378D75 /* LaunchScreen.storyboard */,
+				4D81C55E1D9BF1C500378D75 /* Info.plist */,
+				4D81C5561D9BF1C500378D75 /* Fixer.xcdatamodeld */,
+				4D81C54A1D9BF1C500378D75 /* Supporting Files */,
+				4DE3FB961D9C2E4A0087C5F6 /* PickerVC.h */,
+				4DE3FB971D9C2E4A0087C5F6 /* PickerVC.m */,
+			);
+			path = Fixer;
+			sourceTree = "<group>";
+		};
+		4D81C54A1D9BF1C500378D75 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4D81C54B1D9BF1C500378D75 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4D81C5661D9BF1C500378D75 /* FixerTests */ = {
+			isa = PBXGroup;
+			children = (
+				4D81C5671D9BF1C500378D75 /* FixerTests.m */,
+				4D81C5691D9BF1C500378D75 /* Info.plist */,
+			);
+			path = FixerTests;
+			sourceTree = "<group>";
+		};
+		4D81C5711D9BF1C500378D75 /* FixerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4D81C5721D9BF1C500378D75 /* FixerUITests.m */,
+				4D81C5741D9BF1C500378D75 /* Info.plist */,
+			);
+			path = FixerUITests;
+			sourceTree = "<group>";
+		};
+		E04DF54534971A55E9826251 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB99167E8E5E46878F0DA8BE /* Pods-Fixer.debug.xcconfig */,
+				49CADD40A21C63A92866575A /* Pods-Fixer.release.xcconfig */,
+				7AE6F0235EE25E5A19FD0DF8 /* Pods-FixerTests.debug.xcconfig */,
+				25025E6EE2F24754DE6770AD /* Pods-FixerTests.release.xcconfig */,
+				15DD4ACD2CECD4E34CB2EEFB /* Pods-FixerUITests.debug.xcconfig */,
+				81C4DD704B00E0B280A96AC4 /* Pods-FixerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FB45BE21549BEF7C83216A9E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D8581EA90785140408C1E1D /* libPods-Fixer.a */,
+				C9024072B10DF52568CA79B7 /* libPods-FixerTests.a */,
+				AF91A9C18E246C953F359C24 /* libPods-FixerUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4D81C5461D9BF1C400378D75 /* Fixer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D81C5771D9BF1C500378D75 /* Build configuration list for PBXNativeTarget "Fixer" */;
+			buildPhases = (
+				DD2EA983AC9952377BA9C3D6 /* [CP] Check Pods Manifest.lock */,
+				4D81C5431D9BF1C400378D75 /* Sources */,
+				4D81C5441D9BF1C400378D75 /* Frameworks */,
+				4D81C5451D9BF1C400378D75 /* Resources */,
+				6782E8D140A0C02B31EC9309 /* [CP] Embed Pods Frameworks */,
+				F3BDB558EB07859511ED27F9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fixer;
+			productName = Fixer;
+			productReference = 4D81C5471D9BF1C400378D75 /* Fixer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4D81C5621D9BF1C500378D75 /* FixerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D81C57A1D9BF1C500378D75 /* Build configuration list for PBXNativeTarget "FixerTests" */;
+			buildPhases = (
+				D44853530DC406012505CF6D /* [CP] Check Pods Manifest.lock */,
+				4D81C55F1D9BF1C500378D75 /* Sources */,
+				4D81C5601D9BF1C500378D75 /* Frameworks */,
+				4D81C5611D9BF1C500378D75 /* Resources */,
+				79D01EFF616F4E886CF67FF2 /* [CP] Embed Pods Frameworks */,
+				F7BA1DA49D28B065F2EE394A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D81C5651D9BF1C500378D75 /* PBXTargetDependency */,
+			);
+			name = FixerTests;
+			productName = FixerTests;
+			productReference = 4D81C5631D9BF1C500378D75 /* FixerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4D81C56D1D9BF1C500378D75 /* FixerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D81C57D1D9BF1C500378D75 /* Build configuration list for PBXNativeTarget "FixerUITests" */;
+			buildPhases = (
+				FDDB5A971A87C0505C439BCA /* [CP] Check Pods Manifest.lock */,
+				4D81C56A1D9BF1C500378D75 /* Sources */,
+				4D81C56B1D9BF1C500378D75 /* Frameworks */,
+				4D81C56C1D9BF1C500378D75 /* Resources */,
+				41488D12DFCDCCA22796AF56 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D81C5701D9BF1C500378D75 /* PBXTargetDependency */,
+			);
+			name = FixerUITests;
+			productName = FixerUITests;
+			productReference = 4D81C56E1D9BF1C500378D75 /* FixerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4D81C53F1D9BF1C400378D75 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Raymond Dowe";
+				TargetAttributes = {
+					4D81C5461D9BF1C400378D75 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					4D81C5621D9BF1C500378D75 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 4D81C5461D9BF1C400378D75;
+					};
+					4D81C56D1D9BF1C500378D75 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 4D81C5461D9BF1C400378D75;
+					};
+				};
+			};
+			buildConfigurationList = 4D81C5421D9BF1C400378D75 /* Build configuration list for PBXProject "Fixer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4D81C53E1D9BF1C400378D75;
+			productRefGroup = 4D81C5481D9BF1C400378D75 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4D81C5461D9BF1C400378D75 /* Fixer */,
+				4D81C5621D9BF1C500378D75 /* FixerTests */,
+				4D81C56D1D9BF1C500378D75 /* FixerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D81C5451D9BF1C400378D75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D81C55D1D9BF1C500378D75 /* LaunchScreen.storyboard in Resources */,
+				4D81C55A1D9BF1C500378D75 /* Assets.xcassets in Resources */,
+				4D81C5551D9BF1C500378D75 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D81C5611D9BF1C500378D75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D81C56C1D9BF1C500378D75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		41488D12DFCDCCA22796AF56 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FixerUITests/Pods-FixerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6782E8D140A0C02B31EC9309 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fixer/Pods-Fixer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79D01EFF616F4E886CF67FF2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FixerTests/Pods-FixerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D44853530DC406012505CF6D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DD2EA983AC9952377BA9C3D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F3BDB558EB07859511ED27F9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fixer/Pods-Fixer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7BA1DA49D28B065F2EE394A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FixerTests/Pods-FixerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDDB5A971A87C0505C439BCA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D81C5431D9BF1C400378D75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D81C5581D9BF1C500378D75 /* Fixer.xcdatamodeld in Sources */,
+				4D81C5521D9BF1C500378D75 /* MainVC.m in Sources */,
+				4D81C54F1D9BF1C500378D75 /* AppDelegate.m in Sources */,
+				4D81C54C1D9BF1C500378D75 /* main.m in Sources */,
+				4DE3FB981D9C2E4A0087C5F6 /* PickerVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D81C55F1D9BF1C500378D75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D81C5681D9BF1C500378D75 /* FixerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D81C56A1D9BF1C500378D75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D81C5731D9BF1C500378D75 /* FixerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4D81C5651D9BF1C500378D75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D81C5461D9BF1C400378D75 /* Fixer */;
+			targetProxy = 4D81C5641D9BF1C500378D75 /* PBXContainerItemProxy */;
+		};
+		4D81C5701D9BF1C500378D75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D81C5461D9BF1C400378D75 /* Fixer */;
+			targetProxy = 4D81C56F1D9BF1C500378D75 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4D81C5531D9BF1C500378D75 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D81C5541D9BF1C500378D75 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4D81C55B1D9BF1C500378D75 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D81C55C1D9BF1C500378D75 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4D81C5751D9BF1C500378D75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4D81C5761D9BF1C500378D75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4D81C5781D9BF1C500378D75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB99167E8E5E46878F0DA8BE /* Pods-Fixer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Fixer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.trioro.fixer.Fixer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4D81C5791D9BF1C500378D75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49CADD40A21C63A92866575A /* Pods-Fixer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Fixer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.trioro.fixer.Fixer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4D81C57B1D9BF1C500378D75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AE6F0235EE25E5A19FD0DF8 /* Pods-FixerTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FixerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.trioro.fixer.FixerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fixer.app/Fixer";
+			};
+			name = Debug;
+		};
+		4D81C57C1D9BF1C500378D75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25025E6EE2F24754DE6770AD /* Pods-FixerTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FixerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.trioro.fixer.FixerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fixer.app/Fixer";
+			};
+			name = Release;
+		};
+		4D81C57E1D9BF1C500378D75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15DD4ACD2CECD4E34CB2EEFB /* Pods-FixerUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = FixerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.trioro.fixer.FixerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Fixer;
+			};
+			name = Debug;
+		};
+		4D81C57F1D9BF1C500378D75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81C4DD704B00E0B280A96AC4 /* Pods-FixerUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = FixerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.trioro.fixer.FixerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Fixer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D81C5421D9BF1C400378D75 /* Build configuration list for PBXProject "Fixer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D81C5751D9BF1C500378D75 /* Debug */,
+				4D81C5761D9BF1C500378D75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D81C5771D9BF1C500378D75 /* Build configuration list for PBXNativeTarget "Fixer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D81C5781D9BF1C500378D75 /* Debug */,
+				4D81C5791D9BF1C500378D75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D81C57A1D9BF1C500378D75 /* Build configuration list for PBXNativeTarget "FixerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D81C57B1D9BF1C500378D75 /* Debug */,
+				4D81C57C1D9BF1C500378D75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D81C57D1D9BF1C500378D75 /* Build configuration list for PBXNativeTarget "FixerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D81C57E1D9BF1C500378D75 /* Debug */,
+				4D81C57F1D9BF1C500378D75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4D81C5561D9BF1C500378D75 /* Fixer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4D81C5571D9BF1C500378D75 /* Fixer.xcdatamodel */,
+			);
+			currentVersion = 4D81C5571D9BF1C500378D75 /* Fixer.xcdatamodel */;
+			path = Fixer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4D81C53F1D9BF1C400378D75 /* Project object */;
+}

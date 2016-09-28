@@ -1,0 +1,15 @@
+PODS:
+  - MBProgressHUD (1.0.0)
+  - Unirest (1.1.4)
+
+DEPENDENCIES:
+  - MBProgressHUD (~> 1.0.0)
+  - Unirest (~> 1.1.4)
+
+SPEC CHECKSUMS:
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  Unirest: 5e4d93eaf32463bf619a4ecd3bbc8c32acf21eac
+
+PODFILE CHECKSUM: 4f7515e7a82be92c1ecd555fd8c474e5b198ea05
+
+COCOAPODS: 1.0.1

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "__30-[ViewController refreshRates]_block_invoke_2:ViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "__30-[ViewController refreshRates]_block_invoke:ViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "url">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__30-[ViewController refreshRates]_block_invoke.26:ViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "__30-[ViewController refreshRates]_block_invoke.36:ViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "rawBody">
+            </PersistentString>
+            <PersistentString
+               value = "body">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ViewController updateCalculation]:ViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[rates valueForKey:currencyFrom]">
+            </PersistentString>
+            <PersistentString
+               value = "[rates valueForKey:currencyTo]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
