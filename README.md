@@ -27,3 +27,6 @@ If more time was to be dedicated to this project, some areas for improvement wou
 - More descriptive communication error messages based on what the problem was
 - UI improvements and branding (icon, splash screen)
 - A matrix for viewing all available currencies and their comparative values
+- Unit tests and UI tests
+- Analytics (Google Analytics)
+- Crash reporting (Fabric.io)
