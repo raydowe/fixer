@@ -13,7 +13,9 @@ Frameworks utilized in this example include:
 
 
 1.MBProgressHUD
-⋅⋅*For showing error messages and loading spinners, [link](https://github.com/jdg/MBProgressHUD).
+  *[https://github.com/jdg/MBProgressHUD](https://github.com/jdg/MBProgressHUD)
+  *For showing error messages and loading spinners
 2.Unirest
-⋅⋅*For cosuming the REST api, [link](https://unirest.io)
+  *[https://unirest.io](https://unirest.io)
+  *For cosuming the REST api
 
