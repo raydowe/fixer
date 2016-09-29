@@ -12,10 +12,10 @@ As far as challanges, the implementation is fairly straight forward. Fixer.io al
 Frameworks utilized in this example include:
 
 
-1.MBProgressHUD
-  *[https://github.com/jdg/MBProgressHUD](https://github.com/jdg/MBProgressHUD)
-  *For showing error messages and loading spinners
-2.Unirest
-  *[https://unirest.io](https://unirest.io)
-  *For cosuming the REST api
+1. MBProgressHUD
+  * [https://github.com/jdg/MBProgressHUD](https://github.com/jdg/MBProgressHUD)
+  * For showing error messages and loading spinners
+2. Unirest
+  * [https://unirest.io](https://unirest.io)
+  * For cosuming the REST api
 
