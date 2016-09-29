@@ -22,14 +22,6 @@ NSString *currency;
 NSArray *pickerCurrencies;
 NSInteger currencyIndex;
 
-/*- (void)setDelegate:(id<PickerViewDelegate>)aDelegate
-{
-    if (delegate != aDelegate)
-    {
-        delegate = aDelegate;
-    }
-}*/
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];

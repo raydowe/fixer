@@ -37,6 +37,8 @@ NSString *currencyTo;
 
     [super viewDidLoad];
 
+    [self refreshRates];
+
     // add "done" to keyboard
     UIToolbar *keyboardToolbar = [[UIToolbar alloc] init];
     [keyboardToolbar sizeToFit];
@@ -54,7 +56,6 @@ NSString *currencyTo;
 
 - (void)viewDidAppear:(BOOL)animated
 {
-    [self refreshRates];
 }
 
 - (void)didReceiveMemoryWarning
