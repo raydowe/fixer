@@ -9,7 +9,7 @@ The application involves two simple screens. The first is the main screen of the
 The second screen is a pickerview for selecting a currency. A user can select both the input and output currencies on the main screen, and the pickerview screen allows them to make a selection.
 
 ## Challenges and Design Decisions
-As far as challanges, the implementation is fairly straight forward. Fixer.io allows for an option input and output to be provided, but I found this to be unnecessary. In the interest of speed and user experience, it's preferable to minimize the required connections as much as possible. The application requests current rates once on launch when they aren't available, and then only on request from the user. The base currency in Euros is added to the rate values and all the calculations are done in the application.
+As far as challanges, the implementation is fairly straight forward. Fixer.io allows for an option input and output to be provided, but I found this to be unnecessary. In the interest of speed and user experience, it's preferable to minimize the required connections as much as possible. The application requests current rates once on launch when they aren't available, and then only on request from the user. The base currency in Euros is added to the rate values and all the calculations are done in the application. Because the calculations involve currency, all values are stored using the NSDecimalNumber class.
 
 ## Frameworks
 Frameworks utilized in this example include:
