@@ -12,7 +12,7 @@
 #import "MainVC.h"
 #import "PickerVC.h"
 
-@interface MainVC () <PickerDelegate>
+@interface MainVC () <PickerViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *amountInput;
 @property (weak, nonatomic) IBOutlet UILabel *amountOutput;
@@ -47,7 +47,7 @@ NSString *currencyTo;
     UIBarButtonItem *doneBarButton = [[UIBarButtonItem alloc]
         initWithBarButtonSystemItem:UIBarButtonSystemItemDone
                              target:self
-                             action:@selector(yourTextViewDoneButtonPressed)];
+                             action:@selector(keyboardDonePressed)];
     keyboardToolbar.items = @[ flexBarButton, doneBarButton ];
     self.amountInput.inputAccessoryView = keyboardToolbar;
 }
@@ -78,25 +78,29 @@ NSString *currencyTo;
       [request setUrl:url];
     }] asJsonAsync:^(UNIHTTPJsonResponse *response, NSError *error) {
 
+      // hide spinner
+      [self hideSpinner];
+
       // errors or not a 200 response
       NSInteger code = response.code;
       if (error != nil || code != 200)
       {
-          [self showMessage:@"There was a problem loading current rates. Please check your internet connection and try again."];
+          [self showMessage:@"There was a problem loading current rates. Please check your internet connection and try again." withTitle:@"Error"];
       }
+      else
+      {
+          // get rates from response
+          UNIJsonNode *body = response.body;
+          rates = [[body.object valueForKey:@"rates"] mutableCopy];
 
-      // get rates from response
-      UNIJsonNode *body = response.body;
-      rates = [[body.object valueForKey:@"rates"] mutableCopy];
+          // add base currency
+          [rates setValue:@"1" forKey:@"EUR"];
 
-      // add base currency
-      [rates setValue:@"1" forKey:@"EUR"];
+          // get all currency keys
+          currencies = [[rates allKeys] mutableCopy];
 
-      // get all currency keys
-      currencies = [[rates allKeys] mutableCopy];
-
-      [self ratesRefreshed];
-
+          [self ratesRefreshed];
+      }
     }];
 }
 
@@ -110,29 +114,24 @@ NSString *currencyTo;
       [_updatedTime setText:currentTimestamp];
     });
 
-    // hide spinner
-    [self hideSpinner];
-
     // update calculation
     [self updateCalculation];
 }
 
-- (IBAction)inputCurrencyTouchUpInside:(id)sender
+- (void)currencySelected:(NSString *)currency forIndex:(NSInteger)index
 {
-    PickerVC *pickerVC = [self.storyboard instantiateViewControllerWithIdentifier:@"PickerVC"];
-    pickerVC.currencies = currencies;
-    pickerVC.index = 1;
-    pickerVC.delegate = self;
-    [self.navigationController pushViewController:pickerVC animated:YES];
-}
+    if (index == 0)
+    {
+        currencyFrom = currency;
+        [self.currencyInput setTitle:currency forState:UIControlStateNormal];
+    }
+    else if (index == 1)
+    {
+        currencyTo = currency;
+        [self.currencyOutput setTitle:currency forState:UIControlStateNormal];
+    }
 
-- (IBAction)outputCurrencyTouchUpInside:(id)sender
-{
-    PickerVC *pickerVC = [self.storyboard instantiateViewControllerWithIdentifier:@"PickerVC"];
-    pickerVC.currencies = currencies;
-    pickerVC.index = 2;
-    pickerVC.delegate = self;
-    [self.navigationController pushViewController:pickerVC animated:YES];
+    [self updateCalculation];
 }
 
 - (IBAction)inputAmountChanged:(id)sender
@@ -163,13 +162,15 @@ NSString *currencyTo;
     });
 }
 
-- (void)showMessage:(NSString *)message
+- (void)showMessage:(NSString *)message withTitle:(NSString *)title
 {
     // popup a message for a few seconds
     dispatch_async(dispatch_get_main_queue(), ^{
       MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
       hud.mode = MBProgressHUDModeText;
-      hud.label.text = message;
+      hud.label.text = title;
+      hud.detailsLabel.text = message;
+
       dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 4 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
         [hud hideAnimated:YES];
       });
@@ -184,7 +185,7 @@ NSString *currencyTo;
     });
 }
 
-- (void)yourTextViewDoneButtonPressed
+- (void)keyboardDonePressed
 {
     // hide keyboard
     [_amountInput resignFirstResponder];
@@ -195,16 +196,12 @@ NSString *currencyTo;
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([segue.identifier isEqualToString:@"storyDetailsSegway"])
-    {
-        /*UITableViewCell *cell = (UITableViewCell *)sender;
-        NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
-        NSDictionary *storiesDict = [topStories objectAtIndex:[indexPath row]];
-        StoryModel *storyModel = [[StoryModel alloc] init];
-        storyModel = storiesDict;
-        StoryDetails *controller = (StoryDetails *)segue.destinationViewController;
-        controller.dataModel = storyModel;*/
-    }
+    // set properties on picker view for changing a specific currency
+    PickerVC *pickerVC = [segue destinationViewController];
+    [pickerVC setCurrentSelection:((UIButton *)sender).titleLabel.text];
+    [pickerVC setCurrencies:currencies];
+    [pickerVC setIndex:(([segue.identifier isEqualToString:@"currencyInput"]) ? 0 : 1)];
+    pickerVC.delegate = self;
 }
 
 @end

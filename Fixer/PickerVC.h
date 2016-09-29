@@ -8,13 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@class PickerVC;
+
 @protocol PickerViewDelegate <NSObject>
-- (void)currencySelected:(NSString *)currency;
+- (void)currencySelected:(NSString *)currency forIndex:(NSInteger)index;
 @end
 
 @interface PickerVC : UIViewController
-
-@property (weak, nonatomic) NSArray *currencies;
-//@property (weak, nonatomic) int position;
-
+@property (weak, nonatomic) id<PickerViewDelegate> delegate;
+- (void)setCurrencies:(NSArray *)newCurrencies;
+- (void)setIndex:(NSInteger)newIndex;
+- (void)setCurrentSelection:(NSString *)currencyName;
 @end
